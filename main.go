@@ -8,6 +8,7 @@ const (
 	OUT_DIR                        = "./out"
 	EJECTION_BALANCE               = 16000000000
 	FAR_FUTURE_EPOCH               = math.MaxUint64
+	SLOTS_PER_EPOCH                = 32
 	CHURN_LIMIT_QUOTIENT           = 65536
 	MIN_PER_EPOCH_CHURN_LIMIT      = 4
 	MAX_SEED_LOOKAHEAD             = 4
@@ -17,6 +18,11 @@ const (
 	MAX_ATTESTATIONS               = 128
 	MAX_COMMITTEES_PER_SLOT        = 64
 	TARGET_COMMITTEE_SIZE          = 128
+	EFFECTIVE_BALANCE_INCREMENT    = 1000000000
+	HYSTERESIS_QUOTIENT            = 4
+	HYSTERESIS_DOWNWARD_MULTIPLIER = 1
+	HYSTERESIS_UPWARD_MULTIPLIER   = 5
+	MAX_EFFECTIVE_BALANCE          = 32000000000
 )
 
 func main() {

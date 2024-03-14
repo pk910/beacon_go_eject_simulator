@@ -1,7 +1,8 @@
 package main
 
 type Validator struct {
-	exitEpoch uint64
+	exitEpoch        uint64
+	EffectiveBalance uint64
 }
 
 func NewValidator() Validator {
